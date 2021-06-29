@@ -1,54 +1,56 @@
 * {
-    background-color:aquamarine;
-    text-align:center;
-    font-size:120%;
-    color:blueviolet;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 120%;
+    color: blueviolet;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
-    color:orangered;
-    margin-bottom:4rem;
+    color: orangered;
+    margin-bottom: 4rem;
 }
 
 h2 {
-  margin-bottom: 4rem;  
+    margin-bottom: 4rem;
 }
 
 /* styling for all of my div containers, boxes on screens */
 .container {
-   width: 100vw;
-   height: 100vh;
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   
-    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 /* Styling for the classes in html. Remove redundancies later */
 
 .text-center {
-    text-align:center;
+    text-align: center;
 }
+
 .flex-column {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 .justify-center {
-    justify-content:center;
+    justify-content: center;
 }
+
 .flex-center {
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
 }
 
 .hidden {
-    display:none;
+    display: none;
 }
 
 /* Basic styling for most of the buttons, maybe add more specific buttons later? */
@@ -65,46 +67,13 @@ h2 {
 /* Make the hand cursor over clickable buttons, and use the disable for incomplete fields? */
 
 .btn:hover {
-    cursor:pointer;
-   
+    cursor: pointer;
+
 }
 
 .btn[disabled]:hover {
     cursor: not-allowed;
 }
-
-
-
-/* end screen css, maybe use same styling later? */
-
-.end-form-container {
-   width:100%;
-   display:flex;
-   flex-direction: column;
-   align-items: center;
-   max-width: 30rem; 
-}
-
-input {
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
-    border:none;
-
-}
-
-input::placeholder {
-    color:mediumorchid;
-    border: 2px solid black;
-    border-radius:20px;
-}
-#username {
-    margin-bottom: 3rem;
-    width: 100%;
-    outline:none;
-}
-
 
 /* Same settings as the other buttons, but I am still having trouble so I am keeping it seperate for now */
 #saveScoreBtn {
@@ -112,6 +81,38 @@ input::placeholder {
     width: 35rem;
     border: 5px solid black;
     border-radius: 20px;
-    
+
 }
 
+
+
+/* end screen css, maybe use same styling later? */
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+
+}
+
+input::placeholder {
+    color: mediumorchid;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}

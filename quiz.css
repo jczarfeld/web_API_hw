@@ -1,38 +1,39 @@
-
 .option-container {
-    display:flex;
-    width:100%;
-  border: 5px solid black;
-  border-radius: 30px;
-  min-width:80rem;
-  
+    display: flex;
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 30px;
+    min-width: 80rem;
+
 }
+
 .option-container:hover {
     cursor: pointer;
 }
+
 /* currently trying to make the options boxes change color depending on if the answer is correct or not */
 .correct {
-    background-color:greenyellow;
-    color:deeppink;
+    background-color: greenyellow;
+    color: deeppink;
 }
 
 .option-prefix {
-    padding:2rem 2.5rem;
+    padding: 2rem 2.5rem;
 }
 
 .option-text {
     padding: 2rem 2.5rem;
-    width:100%;
+    width: 100%;
 }
 
 .incorrect {
-    background-color:red;
-    color:deeppink;
+    background-color: red;
+    color: deeppink;
 }
 
 
 #quiz {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 
 }
@@ -45,21 +46,4 @@
 .quiz-main-text {
     text-align: center;
 }
-
-/* currently trying to work in a progress bar feature but might remove since our score is meant to decrease */
-#scoreBar {
-    width: 35rem;
-    height: 4rem;
-    border: 5px solid black;
-    overflow:hidden;
-    border-radius: 20px;
-
-}
-
-#scoreBarFull {
-    height:100%;
-    width:0%;
-    background-color: cornflowerblue;
-}
-
 

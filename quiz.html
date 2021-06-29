@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,54 +9,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="quiz.css">
 </head>
+
 <body>
     <div class="container">
         <div id="game" class="justify-center flex-column">
             <div id="quiz">
+                <h1 class="time" style="text-align:center;"></h1>
+                <div id="main"></div>
+
+
+
                 <div class="quiz-box">
-                <p id = "progressText" class="quiz-label">
-                    Question
-                </p>
-               
-               <!-- above the quiz questions should be a score, I am trying a score bar as well maybe-->
-                <div id="scoreBar">
-                    <div id="scoreBarFull"></div>
+                    <p class="quiz-label">
+                        Score
+                    </p>
+                    <h1 class="quiz-main-text" id="score">
+                        0
+                    </h1>
                 </div>
-            </div>   
-           <div class="quiz-box">
-               <p class="quiz-label">
-                   Score
-               </p>
-               <h1 class="quiz-main-text" id="score">
-                  0 
-               </h1>
-           </div>     
-     </div>
-     
-     <!-- There should be a Question with 4 clickable options underneat-->
-     <h1 id="question">What is the answer to the Q?</h1>
-     <div class="option-container">
-         <p class="option-label">A</p>
-         <p class="option-text" data-number="1">Option 1</p>
-     </div>
-     
-     <div class="option-container">
-         <p class="option-label">B</p>
-         <p class="option-text" data-number="2">Option 2</p>
-     </div>
-    
-     <div class="option-container">
-         <p class="option-label">C</p>
-         <p class="option-text" data-number="3">Option 3</p>
-     </div>
-     
-     <div class="option-container">
-         <p class="option-label">D</p>
-         <p class="option-text" data-number="4">Option 4</p>
-     </div>
+            </div>
+
+            <!-- There should be a Question with 4 clickable options underneat-->
+            <h1 id="question">What is the answer to the Q?</h1>
+            <div class="option-container">
+                <p class="option-label">A</p>
+                <p class="option-text" data-number="1">Option 1</p>
+            </div>
+
+            <div class="option-container">
+                <p class="option-label">B</p>
+                <p class="option-text" data-number="2">Option 2</p>
+            </div>
+
+            <div class="option-container">
+                <p class="option-label">C</p>
+                <p class="option-text" data-number="3">Option 3</p>
+            </div>
+
+            <div class="option-container">
+                <p class="option-label">D</p>
+                <p class="option-text" data-number="4">Option 4</p>
+            </div>
         </div>
     </div>
     <script src="quiz.js"></script>
-    
+
 </body>
+
 </html>
