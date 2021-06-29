@@ -43,6 +43,14 @@ let questions = [{
         answer: 2,
     },
     {
+        question: "If Jeremy has 6 buckets and I have two, what's up?",
+        option1: "Jeremy should share those buckets",
+        option2: "A free America allows unlimited buckets",
+        option3: "What's in the buckets?",
+        option4: "That's an average of 4 buckets each if we include Angela's 4",
+        answer: 4,
+    },
+    {
         question: "What's the best advice my friend Rebecca ever recieved?",
         option1: "Rob a Sludge Factory",
         option2: "Seriously, what's with all the Sludge?",
@@ -57,6 +65,8 @@ let questions = [{
 const SCORE_PTS = 15
 const MAX_QS = 4
 
+// going to decrease the time as well for incorrect answers
+const TIME_PTS = 5
 
 // These functions cycle through the questions, stores the score and moves to another web page when all of them have been answered
 
@@ -118,7 +128,8 @@ options.forEach(option => {
             incrementScore(SCORE_PTS)
 
         } else {
-            decrementScore(SCORE_PTS)
+            decrementScore(SCORE_PTS) ||
+            decrementTime(TIME_PTS)
         }
 
         selectedOption.parentElement.classList.add(classToApply)
@@ -139,6 +150,11 @@ incrementScore = num => {
     decrementScore = num => {
         score -= num
         scoreText.innerText = score
+        
+        decrementTime = num => {
+            secondsLeft-= num
+            timeEl.innerText = secondsLeft
+        }
     }
 }
 
